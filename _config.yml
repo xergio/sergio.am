@@ -1,11 +1,10 @@
 # Site settings
 title: sergio.am
 description: >- # site description
-  Notas y apuntes de cosas con las que suelo perder el tiempo para mi yo del futuro.
+  Notas y apuntes de cosas con las que suelo perder el tiempo, para mi yo del futuro.
 lang: es-ES
 timezone: Europe/Madrid
-image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
-repo: https://github.com/piharpi/jekyll-klise # site repo [optional]
+image: assets/img/sergio.png # This image used for Open Graph more info https://ogp.me/
 mode: dark # default theme "dark" | "light"
 
 # Profile settings

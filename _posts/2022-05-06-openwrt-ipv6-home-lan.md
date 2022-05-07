@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hola!"
+title:  "Conectividad IPv6 sobre túnel WireGuard y OpenWRT"
 ---
 Primer post, sin mucho que contar para variar. Al menos habrá un bonito _commit_ y muchas cosas por limpiar.
 

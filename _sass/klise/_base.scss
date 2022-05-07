@@ -46,7 +46,6 @@ body {
   overflow-x: hidden;
   position: relative;
   color: $text-base-color;
-  background-color: $white;
   font: $normal-weight #{$base-font-size}/#{$base-line-height} $sans-family;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -56,6 +55,10 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal;
   box-sizing: border-box;
+  background: url(/assets/img/simple_dashed_l.png);
+  background-color: $white;
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 // Set `margin-bottom` to maintain vertical rhythm
@@ -281,6 +284,8 @@ blockquote {
   margin-left: auto;
   padding-right: $spacing-full;
   padding-left: $spacing-full;
+  padding-top: 1px;
+  background-color: #dddddd70;
   @extend %clearfix;
 
   @include media-query($on-mobile) {
@@ -293,6 +298,10 @@ blockquote {
       animation: 0.2s ease-in forwards blur;
       -webkit-animation: 0.2s ease-in forwards blur;
     }
+  }
+
+  .header-title {
+    font-weight: 700;
   }
 }
 

@@ -1,12 +1,8 @@
-- title: inicio
+- title: Inicio
   url: /
-  external: false
 
-- title: sobre este sitio
+- title: Sobre este sitio
   url: /about/
-  external: false # set true if you using external link, see below
 
-# Example:
-# - title: github
-#   url: https://github.com/piharpi/jekyll-klise
-#   external: true
+- title: Contacto
+  url: /contact/

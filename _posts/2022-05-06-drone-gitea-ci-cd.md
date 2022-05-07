@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Hola!"
+title:  "CI/CD con Gitea + Drone"
 ---
 Primer post, sin mucho que contar para variar. Al menos habrá un bonito _commit_ y muchas cosas por limpiar.
 

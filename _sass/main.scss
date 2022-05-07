@@ -1,6 +1,6 @@
 // Fonts preferences
 $sans-family: Roboto, sans-serif;
-$mono-family: Consolas, monospace;
+$mono-family: JetBrains Mono, Consolas, monospace;
 $base-font-size: 16px;
 $medium-font-size: $base-font-size * 0.938;
 $small-font-size: $base-font-size * 0.875;
@@ -24,7 +24,7 @@ $gray: #6b7886;
 $white: #fff;
 
 // Dark Colors
-$dark-text-base-color: #c7bebe;
+$dark-text-base-color: #d0d0d0;
 $dark-text-link-blue: #ff5277;
 $dark-text-link-blue-active: #ff2957;
 
@@ -36,7 +36,7 @@ $dark-gray: #767f87;
 
 // Width of the content area
 $wide-size: 890px;
-$narrow-size: 720px;
+$narrow-size: 890px;
 
 // Padding unit
 $spacing-full: 30px;

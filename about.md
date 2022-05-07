@@ -5,10 +5,6 @@ layout: page
 comments: false
 ---
 
-## Contacto
-
-Puedes mandar mail a correo@sergio.am, o [@xergio](https://twitter.com/xergio) en twitter.
-
 ## Yo
 
 Técnicamente soy un simple programador, desde los 16 años que me compraron mi primer ordenador y empecé a aprender todo por mi cuenta. Tengo la mente demasiado dispersa y lo que aquí se publica es un ejemplo de ello.
