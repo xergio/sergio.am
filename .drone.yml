@@ -1,8 +1,11 @@
+---
+kind: pipeline
+type: docker
+name: default
 
-pipeline:
-  build:
-    image: ruby:alpine
-    commands:
-      - bundle install
-      - bundle exec jekyll build
-  branches: main
+steps:
+- name: backend
+  image: ruby:latest
+  commands:
+    - bundle install
+    - bundle exec jekyll build
