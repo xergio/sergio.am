@@ -9,3 +9,9 @@ steps:
   commands:
     - bundle install
     - bundle exec jekyll build
+  when:
+    branch:
+    - main
+
+node:
+  location: marley
