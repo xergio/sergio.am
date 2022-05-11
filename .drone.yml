@@ -1,0 +1,8 @@
+
+pipeline:
+  build:
+    image: ruby:alpine
+    commands:
+      - bundle install
+      - bundle exec jekyll build
+  branches: main
