@@ -4,34 +4,17 @@ type: docker
 name: deploy-jekyll-sergio.am
 
 steps:
-- name: restore-cache
-  image: drillster/drone-volume-cache
+- name: build
+  image: ruby:latest
   volumes:
   - name: bundle-cache
     path: /cache
-  settings:
-    restore: true
-    mount:
-    - /drone/.bundle
-
-- name: build
-  image: ruby:latest
   commands:
-    - bundle config set --local path /drone/.bundle
+    - bundle config set --local path /cache/.bundle
     - bundle env
     - bundle install
     - ls -la /drone/.bundle
     - bundle exec jekyll build
-
-- name: rebuild-cache
-  image: drillster/drone-volume-cache 
-  volumes:
-  - name: bundle-cache
-    path: /cache
-  settings:
-    rebuild: true
-    mount:
-    - /drone/.bundle
 
 when:
   branch:
