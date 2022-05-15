@@ -4,14 +4,40 @@ type: docker
 name: default
 
 steps:
-- name: backend
+- name: restore-cache
+  image: drillster/drone-volume-cache
+  volumes:
+  - name: cache
+    path: /cache
+  settings:
+    restore: true
+    mount:
+    - vendor
+
+- name: build
   image: ruby:latest
   commands:
     - bundle install
     - bundle exec jekyll build
-  when:
-    branch:
-    - main
+
+- name: rebuild-cache
+  image: drillster/drone-volume-cache 
+  volumes:
+  - name: cache
+    path: /cache
+  settings:
+    rebuild: true
+    mount:
+    - vendor
+
+when:
+  branch:
+  - main
 
 node:
   location: marley
+
+volumes:
+- name: cache
+  host:
+    path: /var/lib/drone/temp
