@@ -7,15 +7,17 @@ steps:
 - name: restore-cache
   image: drillster/drone-volume-cache
   volumes:
-  - name: cache
+  - name: bundle-cache
     path: /cache
   settings:
     restore: true
     mount:
-    - vendor
+    - /drone/.bundle
 
 - name: build
   image: ruby:latest
+  environment:
+    - BUNDLE_PATH=/drone/.bundle
   commands:
     - bundle install
     - bundle exec jekyll build
@@ -23,12 +25,12 @@ steps:
 - name: rebuild-cache
   image: drillster/drone-volume-cache 
   volumes:
-  - name: cache
+  - name: bundle-cache
     path: /cache
   settings:
     rebuild: true
     mount:
-    - vendor
+    - /drone/.bundle
 
 when:
   branch:
@@ -38,6 +40,6 @@ node:
   location: marley
 
 volumes:
-- name: cache
+- name: bundle-cache
   host:
-    path: /var/lib/drone/temp
+    path: /tmp/ruby-bundle-cache-sergio.am
