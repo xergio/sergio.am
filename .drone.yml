@@ -17,7 +17,7 @@ steps:
 - name: build
   image: ruby:latest
   environment:
-    - BUNDLE_PATH=/drone/.bundle
+    BUNDLE_PATH: /drone/.bundle
   commands:
     - bundle install
     - bundle exec jekyll build
