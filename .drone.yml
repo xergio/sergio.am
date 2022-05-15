@@ -20,6 +20,7 @@ steps:
     - bundle config set --local path /drone/.bundle
     - bundle env
     - bundle install
+    - ls -la /drone/.bundle
     - bundle exec jekyll build
 
 - name: rebuild-cache
@@ -42,4 +43,4 @@ node:
 volumes:
 - name: bundle-cache
   host:
-    path: /tmp/ruby-bundle-cache-sergio.am
+    path: /var/lib/drone/temp/ruby-bundle-cache-sergio.am
