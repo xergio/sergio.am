@@ -22,7 +22,8 @@ steps:
   - name: www
     path: /tmp/www
   commands:
-    - mv _site/ /tmp/www/_site
+    - rm  -rf/tmp/www/_site
+    - cp _site /tmp/www/_site
 
 when:
   branch:
