@@ -23,7 +23,7 @@ steps:
     path: /tmp/www
   commands:
     - rm  -rf /tmp/www/_site
-    - cp _site /tmp/www/_site
+    - cp -r _site /tmp/www/_site
 
 when:
   branch:
