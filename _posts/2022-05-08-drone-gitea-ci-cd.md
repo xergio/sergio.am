@@ -29,8 +29,17 @@ Como el contenido hay que servirlo desde alguna parte, tengo la siguiente config
 
 ```nginx
 server {
-    ...
-    ...
+    server_name sergio.am;
+    root /var/www/_site;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ @gitea;
+    }
+
+    location @gitea {
+        proxy_pass http://gitea:3000;
+    }
 }
 ```
 

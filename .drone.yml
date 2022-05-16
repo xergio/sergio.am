@@ -11,9 +11,7 @@ steps:
     path: /cache
   commands:
     - bundle config set --local path /cache/.bundle
-    - bundle env
     - bundle install
-    - ls -la /cache/.bundle
     - bundle exec jekyll build
 
 - name: deploy
