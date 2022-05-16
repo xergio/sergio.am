@@ -14,12 +14,14 @@ Y todo "privado".
 
 El ejemplo es este mismo blog. Cuando creo/edito una entrada, o literalmente cualquier archivo del mismo, al _commitear_ los cambios a _git_ se ejecuta un _pipeline_ en el runner que corresponda, reconstruye el sitio y crea una imágen del resultado final, lo manda al registro, y se despliega la nueva imágen. Con prácticamente 0 downtime, rollbacks, versionado y código 100% visible y disponible.
 
+> Nota: Esto sería en un escenario ideal y así estaba en la anterior versión, pero en la actual no se monta una imágen aun, se monta el resultado del sitio en el _host_. Eso cambiará a futuro.
+
 El resumen del archivo [.drone.yml](https://sergio.am/code/sergio.am/src/branch/main/.drone.yml) sería:
 
-1. Bla
-2. blo
-3. lala
-4. lslslsls
+1. _build_ del sitio con la [imágen de docker de Jekyll](https://hub.docker.com/r/jekyll/jekyll/).
+2. _build_ de la imágen final basada en nginx (por ejemplo) copiando el contenido de `_site`.
+3. _push_ de la imágen al registro.
+4. _pull_ del registro y _restart_ de la nueva imágen donde se esté ejecutando.
 
 ## Web server
 
