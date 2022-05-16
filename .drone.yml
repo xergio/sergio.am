@@ -22,7 +22,7 @@ steps:
   - name: www
     path: /tmp/www
   commands:
-    - rsync -av --delete _site/* /tmp/www/
+    - mv _site/ /tmp/www/_site
 
 when:
   branch:
