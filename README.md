@@ -4,8 +4,8 @@
 Notas y apuntes, futuro contenido de static pages en sergio.am
 
 ```shell
-docker run --rm --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" -it jekyll/jekyll:3.8 jekyll build
-docker run --rm --volume="$PWD:/srv/jekyll" --volume="$PWD/vendor/bundle:/usr/local/bundle" -p 4000:4000 -it jekyll/jekyll:3.8 jekyll serve --watch
+docker run -it --rm --volume="$PWD:/srv/jekyll:Z" jekyll/jekyll jekyll build
+docker run -it --rm --volume="$PWD:/srv/jekyll:Z" -p 4000:4000 jekyll/jekyll jekyll serve
 ```
 
 ```shell
