@@ -13,7 +13,7 @@ steps:
     - bundle config set --local path /cache/.bundle
     - bundle env
     - bundle install
-    - ls -la /drone/.bundle
+    - ls -la /cache/.bundle
     - bundle exec jekyll build
 
 when:
