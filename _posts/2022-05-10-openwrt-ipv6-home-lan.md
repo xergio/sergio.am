@@ -22,6 +22,58 @@ Aunque mi solución no es perfecta tampoco (mirad el ping), solo por la estabili
 
 ## VPS barato + WireGuard + OpenWRT
 
-Esta es mi solución: crear un tunel seguro con [WireGuard](https://www.wireguard.com/) entre un VPS cualquiera y el router con OpenWRT. Si has llegado hasta aquí no netesito decirte por qué WireGuard. El router hace de cliente, y el VPS de servidor.
+Esta es mi solución: crear un tunel seguro con [WireGuard](https://www.wireguard.com/) entre un VPS cualquiera y el router con OpenWRT. Si has llegado hasta aquí no necesito decirte por qué WireGuard. El router hace de cliente, y el VPS de servidor. Configuración standart. La clave de sacar todo el tráfico IPv6 por el tunel es el siguiente, `/etc/config/network`:
 
-blablabla...
+```
+config interface 'WG'
+        option proto 'wireguard'
+        option listen_port '51820'
+        option private_key 'priv.key...'
+        list addresses '10.11.12.2/24'
+        list addresses 'fdbc:f607:7749::2/64'
+
+config wireguard_WG
+        option description 'WireGuard'
+        option endpoint_port '51820'
+        option route_allowed_ips '1'
+        option public_key 'pub.key...'
+        option endpoint_host '1.2.3.4'
+        option persistent_keepalive '25'
+        list allowed_ips '10.11.12.0/24'
+        list allowed_ips '::/0'
+```
+
+El segundo `list addresses` del _interface_, y el `list allowed_ips`. Hay que darle al interface una IPv6 en el servidor también:
+
+```ini
+[Peer]
+# Name = peer_openwrt
+PublicKey = pub.key...
+AllowedIPs = 10.11.12.2/32,fdbc:f607:7748::2,fdb9:f2e5:ccc0::/48
+```
+
+Además el interface del servidor necesita IPv6 también:
+
+```ini
+[Interface]
+Address = 10.11.12.1/24, fdbc:f607:7748::1/64
+```
+
+Y las reglas de `iptables` para IPv4 y 6:
+
+```ini
+PostUp = iptables  -A FORWARD -i %i -j ACCEPT
+PostUp = iptables  -A FORWARD -o %i -j ACCEPT
+PostUp = ip6tables -A FORWARD -i %i -j ACCEPT
+PostUp = ip6tables -A FORWARD -o %i -j ACCEPT
+PostUp = iptables  -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+PostUp = ip6tables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+PreDown = iptables  -D FORWARD -i %i -j ACCEPT
+PreDown = iptables  -D FORWARD -o %i -j ACCEPT
+PreDown = ip6tables -D FORWARD -i %i -j ACCEPT
+PreDown = ip6tables -D FORWARD -o %i -j ACCEPT
+PreDown = iptables  -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+PreDown = ip6tables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+```
+
+"Y ya está"! 3 años para conseguir que esto funcione, para que a las dos semanas cambie de operadora y me den IPv6 nativo 🥲
