@@ -56,16 +56,12 @@ jekyll_compose:
     description:
 
 # Homepage limit posts
-number_of_posts: 5
+number_of_posts: 5000
 
 # Build settings
 # theme: klise
 sass:
   style: compressed
-
-include:
-  - _redirects
-  - .htaccess
 
 exclude:
   - CNAME
