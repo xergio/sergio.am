@@ -2,7 +2,7 @@
 layout: post
 title:  "Digi: Remplazar router y ONT ZTE por OpenWRT y Ufiber"
 ---
-La mayor parte del procedimiento se consigue siguiendo este link de Bandaancha: [Cómo cambiar la ONT ZTE F601 v7 por un Ufiber Loco sobre fibra Digi](https://bandaancha.eu/foros/como-cambiar-zte-f601-v7-ufiber-loco-1743790)
+La mayor parte del procedimiento se consigue siguiendo este link de Bandaancha: [Cómo cambiar la ONT ZTE F601 v7 por un Ufiber Loco sobre fibra Digi](https://bandaancha.eu/foros/como-cambiar-zte-f601-v7-ufiber-loco-1743790) ([cache](/assets/digi-openwrt-ont/Cómo cambiar la ONT ZTE F601 v7 por un Ufiber Loco sobre fibra Digi 💡.pdf))
 
 Digi, a día de hoy, uno de los equipos que instala para su fibra Smart es el router ZTE ZXHN H3600 ([manual](/assets/digi-openwrt-ont/ZTE_ZXHN_H3600_Manual_de_usuario.pdf) y [guia](/assets/digi-openwrt-ont/Guia-FIBRA_ZTE_H3600_WiFi6.pdf)) + ONT ZTE F601 v7 ([manual](/assets/digi-openwrt-ont/ZXHN-F601-PON-ONT-User-Manual.pdf)).
 
