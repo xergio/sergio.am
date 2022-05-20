@@ -15,7 +15,7 @@ Lo que yo tengo ahora mismo es:
 - ONT [Ubiquiti UFiber Loco](https://store.ui.com/collections/operator-ufiber/products/ufiber-loco) (vaya nombre)
   - Hardware: v1.0
   - Firmware: 4.4.1
-- Router [Linksys WRT3600ACM](https://www.linksys.com/es/wireless-routers/wrt-wireless-routers/linksys-wrt3200acm-ac3200-mu-mimo-gigabit-wifi-router/p/p-wrt3200acm/)
+- Router [Linksys WRT3200ACM](https://www.linksys.com/es/wireless-routers/wrt-wireless-routers/linksys-wrt3200acm-ac3200-mu-mimo-gigabit-wifi-router/p/p-wrt3200acm/)
   - Hardware: ARMv7 Processor rev 1 (v7l)
   - Firmware: OpenWrt 21.02.0 r16279-5cc0535800 / LuCI openwrt-21.02 branch git-21.231.26241-422c175.
 
