@@ -14,3 +14,11 @@ python3 -m http.server 4000
 ```
 
 http://localhost:4000
+
+# Drafts
+
+Usar directorio `_drafts` y para ver el doc usar:
+
+```shell
+docker run -it --rm --volume="$PWD:/srv/jekyll:Z" -p 4000:4000 jekyll/jekyll jekyll serve --drafts
+```
