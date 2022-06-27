@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Clasificar clientes con diferentes opciones DHCP en OpenWRT"
+tags: [openwrt, dhcp, tag, ip, iphone, android, pihole, dns]
 ---
 Si en tu red local usas cosas como [Pi-hole](https://pi-hole.net/) para filtrar los DNS y bloquear publicidad/malware/etc, y por casualidad tienes algún dispositivo iOS (Apple), vas a tener una notificación permanente de que "La red no es segura". Algo tiene que ver el [DoH](https://en.wikipedia.org/wiki/DNS_over_HTTPS), que se ve que viene activado por defecto, y al "falsear los DNS" se entera.
 

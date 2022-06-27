@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "CI/CD con Gitea + Drone"
+tags: [fit, gitea, drone, cicd, docker, registry, runner, nginx]
 ---
 [Drone CI](https://www.drone.io/) es un sistema de CI/CD autónomo y autogestinado que puede asemejarse a lo que es Gitlab CI, Github Actions, Travis CI, etc. En mi caso, al usar [Gitea](https://gitea.io/), me viene perfecto para dar soporte de CI a mis proyectos.
 

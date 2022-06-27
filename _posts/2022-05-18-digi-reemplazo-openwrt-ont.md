@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Digi: Remplazar router y ONT ZTE por OpenWRT y Ufiber"
+tags: [digi, zte, ufiber, loco, openwrt, linksys, wrt3200acm]
 ---
 La mayor parte del procedimiento se consigue siguiendo este link de Bandaancha: [Cómo cambiar la ONT ZTE F601 v7 por un Ufiber Loco sobre fibra Digi](https://bandaancha.eu/foros/como-cambiar-zte-f601-v7-ufiber-loco-1743790) ([cache](/assets/digi-openwrt-ont/Cómo cambiar la ONT ZTE F601 v7 por un Ufiber Loco sobre fibra Digi 💡.pdf)). Además he replicado [este post allí también](https://bandaancha.eu/foros/remplazar-router-zte-h3600-uno-openwrt-1746083).
 

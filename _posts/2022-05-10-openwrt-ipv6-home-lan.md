@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Conectividad IPv6 sobre túnel WireGuard y OpenWRT"
+tags: [openwrt, wireguard, vpn, tunnel, 6in4, tunnelbroker]
 ---
 La situación actual en España es que ningún operador de internet da IPv6. Y yo quiero IPv6. No por nada especial, simplemente por tener esa alternativa de conexión, probar cosas, aprender, etc. Y como lo quiero, lo he hecho, ejemplo de petición a [ipv6.google.com](https://ipv6.google.com/):
 
