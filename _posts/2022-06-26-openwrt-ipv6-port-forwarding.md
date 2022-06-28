@@ -50,7 +50,7 @@ uci commit firewall
 /etc/init.d/firewall restart
 ````
 
-O desde el interface...
+O desde el interface en Network > Firewall > Traffic Rules...
 
 ![Firewall](/assets/traffic-rules/firewall.png)
 
