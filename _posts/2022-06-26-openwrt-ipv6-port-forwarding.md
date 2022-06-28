@@ -50,6 +50,14 @@ uci commit firewall
 /etc/init.d/firewall restart
 ````
 
+O desde el interface...
+
+![Firewall](/assets/traffic-rules/firewall.png)
+
+Así quedaría la línea de la regla una vez añadida:
+
+![Rule](/assets/traffic-rules/rule.png)
+
 Volvemos a mirar los puertos y...:
 
 ```shell
