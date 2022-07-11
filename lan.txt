@@ -1,0 +1,11 @@
+Digi Fibra Smart 1Gbps symetric
+
+Linksys WRT3600ACM
+Linksys LGS116P-EU
+Netgear WAX620
+
+2x Raspberry Pi 3b+
+1x Raspberry Pi 4b
+Qnap TS-431P
+Synology DS118
+NUC-like i5-8250U
