@@ -25,3 +25,11 @@ wsl --import Ubuntu Ubuntu ubuntu.tar
 ```
 
 El `export` e `import` tardan un poquito, en mi caso eran unos cuantos gigas, e incluso usando un m.2 ha tardado un poquillo en ejecutarlos.
+
+Por último, en caso de migrar Ubuntu, he tenido que volver a configurar el usuario por defecto:
+
+```shell
+ubuntu config --default-user <username>
+```
+
+Sino entrará como `root` en vez de nuestro usuario.
