@@ -14,5 +14,6 @@ Toshiba N300 4TB 7200RPM [Parity]
 Crucial MX500 250GB [Cache]
 HDMI Dummy Plug
 Kingston DataTraveler SE9 32GB
+PCIe 10Gtek® X520-DA2
 
 Plex Pass Lifetime
