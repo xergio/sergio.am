@@ -1,3 +1,4 @@
+
 Unraid  OS Plus
 
 Fractal Design Node 804
@@ -7,10 +8,10 @@ Kingston FURY Beast DDR4 2666MHz 8GB CL16
 EVGA 500 GD v2 500W 80+ Gold
 NOX HUMMER H-212
 PCIe SATA3 x1 6ports
+PCIe SATA3 x1 4ports
 Toshiba N300 4TB 7200RPM [Parity]
 5x 4TB Seagate IronWolf 5900RPM
-2x 3TB Seagate IronWolf 5200RPM
-2x 1TB WD Red 5200RPM
+3x 18TB Toshiba MG09 7200RPM
 Crucial MX500 250GB [Cache]
 HDMI Dummy Plug
 Kingston DataTraveler SE9 32GB
