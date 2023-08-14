@@ -28,7 +28,7 @@ when:
   - main
 
 node:
-  location: marley
+  location: nexus
 
 volumes:
 - name: bundle-cache
