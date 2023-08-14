@@ -12,16 +12,7 @@ steps:
   commands:
     - bundle config set --local path /cache/.bundle
     - bundle install
-    - bundle exec jekyll build
-
-- name: deploy
-  image: busybox
-  volumes:
-  - name: www
-    path: /tmp/www
-  commands:
-    - rm  -rf /tmp/www/_site
-    - cp -r _site /tmp/www/_site
+    - bundle exec jekyll build --destination /var/www/ --incremental
 
 when:
   branch:
@@ -34,6 +25,3 @@ volumes:
 - name: bundle-cache
   host:
     path: /var/lib/drone/temp/ruby-bundle-cache-sergio.am
-- name: www
-  host:
-    path: /var/www
