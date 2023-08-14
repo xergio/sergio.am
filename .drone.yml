@@ -12,7 +12,7 @@ steps:
   commands:
     - bundle config set --local path /cache/.bundle
     - bundle install
-    - bundle exec jekyll build --destination /var/www/ --incremental
+    - bundle exec jekyll build --destination /var/www/_site --incremental
 
 when:
   branch:
