@@ -1,24 +1,12 @@
 
 # sergio.am
 
-Notas y apuntes, futuro contenido de static pages en sergio.am
+Static content.
+
+## Dev
 
 ```shell
-docker run -it --rm --volume="$PWD:/srv/jekyll:Z" jekyll/jekyll jekyll build
-docker run -it --rm --volume="$PWD:/srv/jekyll:Z" -p 4000:4000 jekyll/jekyll jekyll serve
+python3 -m http.server -b "::" -d dist/ 4000
 ```
 
-```shell
-cd _site
-python3 -m http.server 4000
-```
-
-http://localhost:4000
-
-# Drafts
-
-Usar directorio `_drafts` y para ver el doc usar:
-
-```shell
-docker run -it --rm --volume="$PWD:/srv/jekyll:Z" -p 4000:4000 jekyll/jekyll jekyll serve --drafts
-```
+http://[::]:4000 (ipv6 to bypass WSL2 networking issues)

@@ -1,18 +1,13 @@
 ---
 kind: pipeline
 type: docker
-name: deploy-jekyll-sergio.am
+name: deploy-sergio.am
 
 steps:
 - name: build
-  image: ruby:latest
-  volumes:
-  - name: bundle-cache
-    path: /cache
+  image: pandoc/core:latest
   commands:
-    - bundle config set --local path /cache/.bundle
-    - bundle install
-    - bundle exec jekyll build --destination /var/www/_site --incremental
+    - /var/www/build.sh
 
 when:
   branch:
@@ -20,8 +15,3 @@ when:
 
 node:
   location: nexus
-
-volumes:
-- name: bundle-cache
-  host:
-    path: /var/lib/drone/temp/ruby-bundle-cache-sergio.am

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>$if(title)$$title$$else$Sergio Álvarez$endif$ | sergio.am</title>
+        <style>
+$styles.html()$
+        </style>
+        <link rel="preload" as="font" href="/static/JetBrainsMono-Regular.woff2">
+        <link rel="preload" as="font" href="/static/JetBrainsMono-Regular.woff">
+        <link rel="stylesheet" href="/static/css.css">
+    </head>
+    <body class="$bodyClass$">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/">Índice</a></li>
+                    <li><a href="https://sergio.am/explore/repos">Código fuente</a></li>
+                    <li><a href="https://xrg.es/">RegExp</a></li>
+                    <li><a href="https://dencode.xrg.es/">Dencode</a></li>
+                    <li><a href="/about.html">Contacto</a></li>
+                    <!--<li><a href="/rss.xml">RSS/Feed</a></li>-->
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            $if(isIndex)$<div class="header">
+                <img class="avatar" src="/static/sergio100w.jpg" alt="sergio.am">
+                <h2>Sergio Álvarez</h2>
+                <p>Notas y apuntes para mi yo del futuro.</p>
+            </div>$endif$
+
+            $if(title)$<h1>$title$</h1>$endif$
+            $if(postDate)$<div class="subtitle">~ $postDate$</div>$endif$
+
+$body$
+        </main>
+
+        <footer>
+            <p><a href="/LICENSE.html">© Sergio Álvarez Muñoz</a> <span title="Site build date">🔨 $buildDate$</span></p>
+        </footer>
+    </body>
+</html>

@@ -1,19 +1,24 @@
 ---
-title: Qué es esto
+title: Qué es esto?
 permalink: /about/
 layout: page
 comments: false
 ---
 
-## Yo
+Esto podría resumirse en un cementerio de textos que de vez en cuando (de año en año) actualizo, abandono, actualizo, abandono, etc.
 
-Técnicamente soy un simple programador, desde los 16 años que me compraron mi primer ordenador y empecé a aprender todo por mi cuenta. Tengo la mente demasiado dispersa y lo que aquí se publica es un ejemplo de ello.
+No es la primera vez que monto algo así, ni será la última. Por eso, para mi yo del futuro, voy a dejar unas premisas, unos _por qués_, y unos _cómos_ para no reinventar la rueda ni recorrer caminos ya andados (y fallidos).
 
-## Este sitio
+## Contacto
 
-No es la primera vez que monto algo así, ni será la última. Por eso, para mi yo del futuro, voy a dejar unas premisas, unos por qués, y unos cómos para no reinventar la rueda ni recorrer caminos ya andados.
+Lo primero, cómo puedes encontrarme:
 
-### Premisas
+- [correo@sergio.am](mailto:correo@sergio.am?subject=sergio.am), es lo más cómodo, el tradicional email.
+- [Telegram](https://t.me/sxergio), ahí seguro que también lo veo.
+
+Así de simple, cualquier otro método seguramente pierda el mensaje.
+
+## Premisas
 
 Este sitio tiene como objetivo:
 
@@ -25,25 +30,23 @@ Este sitio tiene como objetivo:
 
 Y todo ello tiene que ser:
 
-- sencillo. [KISS](https://en.wikipedia.org/wiki/KISS_principle)
-- mantenible. Obvio...
-- portable. Alguna vez se os ha petado un disco/servidor? Pues eso.
-- autosuficiente. Mi sueño es que, si me muero, esto quede para siempre disponible aunque no haya nadie al mando.
+- sencillo
+- mantenible
+- portable
+- autosuficiente
 
-### Por qué
+## Por qué
 
-Eso, por qué otra vez esto, o por qué otro sitio como los miles que ya habrá por internet. Ok, sencillo... porque me da pereza tener que buscar en google una y otra vez lo mismo pasado X tiempo. Porque a veces me baso en otras ideas, tutoriales, documentos, etc. y lo que termino haciendo yo no tiene una explicación exacta, o una línea recta que seguir, y necesito apuntarme mis cambios o cómo lo he hecho.
+He tenido muchos por qué, pero a día de hoy es simplemente por recordar a futuro cómo he hecho alguna cosa. Todo lo que hago suele ser un mix de cosas que busco, aprendo y experimento, y cuando pasa el tiempo se me olvida el camino recorrido.
 
-Y porque mi memoria es muy corta y limitada, me quedo con chorradas pero no con lo importante. Y esto, para mi, es importante.
+Así que a veces necesito un rinconcito donde anotarme cosas, y si encima sirven para que otra persona, mejor. Al igual que me han servidor a mi los textos de otros, es una pqueña forma de devolver el favor.
 
-### Cómo
+## Cómo
 
-Habrá otros documentos para explicar toda la plataforma que tengo montada. Pero este sitio en concreto no.
+Ya tengo una edad donde no me apetece recordar cómo he montado las cosas básicas, por lo cada vez lo simplifico y recorto más.
 
-Genero el sitio de forma estática con [Jekyll](https://jekyllrb.com/) por conveniencia y lo extendido que está. Además no es la primera vez que lo uso y minimizaba mi apredizaje. Uso el theme [Klisé](http://github.com/piharpi/jekyll-klise) modificado.
+Actualmente es tan sencillo como escribir unos `.md` y con un script muy sencillo los convierto a `.html` con [pandoc](https://pandoc.org/). YA ESTÁ.
 
-Edito los `.md` via terminal, [Sublime](https://www.sublimetext.com/) o el editor de [Gitea](https://gitea.io/). Según me de.
+Lo textos los edito via terminal, o con el editor de turno, o directamente desde [Gitea](https://github.com/go-gitea/gitea). Según me de o dónde me pille. En el fondo es un repo de Git con un puñado de archivos. Con un simple `post-hook` reconstruyo el sitio y ya.
 
-Actualmente uso la conexión de casa para servir el sitio pero la idea es que no haga falta, por ello estoy pensando entre usar el [Free Tier de AWS](https://aws.amazon.com/free/) o sitios gratuitos como [Netlify](https://netlify.com)+[Cloudflare](https://cloudflare.com), [Github Pages](https://pages.github.com/), o similares.
-
-Para los DNS y dominios uso [OVH](https://ovh.com). No todos tienen `.io` y `.am`...
+Y poco más, todo esto puedo luego publicarlo desde un simple nginx, sitios como GitHub Pages o Cloudflare, una RasPi, da igual. Son archivos estáticos que se sirven hasta por señales de humo.
