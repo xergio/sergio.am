@@ -10,7 +10,7 @@ buildDate="$(date '+%d %b %Y')"
 # $1=file $2=add to index
 convert_md_to_html() {
     fileName=$(basename "${1%.*}")
-    postDate=$(stat -c %y "$1" | date '+%d %b %Y' -f -)
+    postDate=$(date '+%d %b %Y' -d "$(stat -c %y "$1" | awk '{print $1}')")
     bodyClass="page"
 
     if [ $2 -eq 1 ]; then
