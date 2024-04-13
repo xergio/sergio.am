@@ -7,7 +7,7 @@ steps:
 - name: build
   image: alpine:latest
   commands:
-    - apk update && apk add bash pandoc
+    - apk update && apk add bash jq pandoc
     - bash ./build.sh
     - mv _site /var/www/
 
