@@ -7,8 +7,7 @@ steps:
 - name: build
   image: pandoc/core:latest
   commands:
-    - pwd
-    - cd /drone/src && ls -la && ./build.sh
+    - bash ./build.sh
     - mv _site /var/www/
 
 when:
