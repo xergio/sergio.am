@@ -16,10 +16,10 @@ convert_md_to_html() {
 
     if [ $2 -eq 1 ]; then
         bodyClass="post"
-        echo "- [$(pandoc --template=pandoc-metadata.json -s "$1" | jq -r .title)](/$fileName.html) _${postDate}_" >> _site/index.md
+        echo "- [$(pandoc --template=pandoc-metadata.json "$1" | jq -r .title)](/$fileName.html) _${postDate}_" >> _site/index.md
     fi
 
-    pandoc --template=tpl-layout.html --highlight-style=zenburn --metadata buildDate="$buildDate" --metadata postDate="$postDate" --metadata bodyClass="$bodyClass" -f markdown -t html5 -s "$1" > _site/"$fileName".html
+    pandoc --template=tpl-layout.html --highlight-style=zenburn --metadata buildDate="$buildDate" --metadata postDate="$postDate" --metadata bodyClass="$bodyClass" -f markdown -t html5 "$1" > _site/"$fileName".html
 }
 
 # posts
