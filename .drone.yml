@@ -5,8 +5,9 @@ name: deploy-sergio.am
 
 steps:
 - name: build
-  image: pandoc/core:latest
+  image: alpine:latest
   commands:
+    - apk update && apk add pandoc
     - bash ./build.sh
     - mv _site /var/www/
 
