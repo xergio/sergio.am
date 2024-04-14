@@ -7,7 +7,7 @@ steps:
 - name: build
   image: ubuntu:latest
   commands:
-    - apt update && apt install bash jq pandoc
+    - apt -y update && apt -y install bash jq pandoc
     - bash ./build.sh
     - rm -rf /var/www/_site && mv _site /var/www/
 
