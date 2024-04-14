@@ -5,9 +5,9 @@ name: deploy-sergio.am
 
 steps:
 - name: build
-  image: alpine:latest
+  image: ubuntu:latest
   commands:
-    - apk update && apk add bash jq pandoc
+    - apt update && apt install bash jq pandoc
     - bash ./build.sh
     - rm -rf /var/www/_site && mv _site /var/www/
 
