@@ -1,0 +1,28 @@
+Medion Akoya E16401 MD62264 Intel Core i5-1135G7/8GB/512GB SSD/16.1"
+
+https://www.pccomponentes.com/medion-akoya-e16401-md62264-intel-core-i5-1135g7-8gb-512gb-ssd-161
+
+
+    Procesador Intel® Core™ i5-1135G7 (4 núcleos, hasta 4.2 GHz con tecnología Intel® Turbo Boost, 8 MB L3 caché)
+    Memoria RAM 8 GB DDR4
+    Almacenamiento 512 GB SSD
+    Unidad óptica No
+    Display 16.1" (40,7 cm) con tecnología IPS y resolución Full HD (1920 x 1080 píxeles)
+    Controlador gráfico Intel® Iris Xe Graphics
+    Conectividad Intel® Wi-Fi AX201 con función Bluetooth 5.1 integrada
+    Webcam Sí, HD
+    Micrófono Sí
+    Audio Sonido de alta resolución Dolby Audio™ con 2 altavoces
+    Teclado Retroiluminado
+    Batería 3 celdas, Polímero de litio, 45Wh
+    Conexiones
+        1 x USB 3.2 Gen 2 Tipo-C con función DisplayPort
+        1 x USB 2.0
+        1 x HDMI
+        1 x Lector tarjeta Micro SD
+        1 x Audio Combo
+        1 x Dc-in
+    Sistema operativo FreeDOS (SIN SISTEMA OPERATIVO)
+    Dimensiones (Ancho x Profundidad x Altura) 370 x 23 x 245 mm
+    Peso 1,95 kg
+    Color Gris
