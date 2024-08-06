@@ -7,7 +7,8 @@ steps:
 - name: build
   image: ubuntu:latest
   commands:
-    - apt -y update && apt -y install bash jq pandoc
+    - apt -y update && apt -y install bash git git-restore-mtime jq pandoc
+    - git restore-mtime
     - bash ./build.sh
     - rm -rf /var/www/_site && mv _site /var/www/
 
