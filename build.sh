@@ -3,8 +3,8 @@
 set -x
 
 # bad start, we should build to a tmp dir
+rm -rf _site
 mkdir -p _site
-rm -rf _site/*
 touch _site/index.md
 buildDate="$(date '+%d %b %Y')"
 
