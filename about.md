@@ -49,4 +49,4 @@ Actualmente es tan sencillo como escribir unos `.md` y con un script muy sencill
 
 Lo textos los edito via terminal, o con el editor de turno, o directamente desde [Gitea](https://github.com/go-gitea/gitea). Según me de o dónde me pille. En el fondo es un repo de Git con un puñado de archivos. Con un simple `post-hook` reconstruyo el sitio y ya.
 
-Y poco más, todo esto puedo luego publicarlo desde un simple nginx, sitios como GitHub Pages o Cloudflare, una RasPi, da igual. Son archivos estáticos que se sirven hasta por señales de humo.
+Y poco más, todo esto puedo luego publicarlo desde un simple nginx, sitios como GitHub Pages o Cloudflare, una RasPi, da igual. Son archivos estáticos que se sirven hasta por señales de humo :)
