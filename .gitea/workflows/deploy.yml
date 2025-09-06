@@ -1,0 +1,20 @@
+name: sergio.am
+
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to volume
+        run: |
+          set -x
+          apt-get update && apt-get install -y bash git git-restore-mtime jq pandoc rsync
+          git restore-mtime
+          bash ./build.sh
+          mkdir -p /var/www/_site
+#          rsync -rclpiv --delete ${{ gitea.workspace }}/_site/ /var/www/_site/

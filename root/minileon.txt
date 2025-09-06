@@ -1,0 +1,6 @@
+Mini PC
+
+- Intel Core i5-8250U
+- Intel UHD Graphics 620 128MB
+- DDR4 4GB
+- M.2 SSD 128GB
