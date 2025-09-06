@@ -14,7 +14,7 @@ jobs:
         run: |
           set -x
           apt-get update && apt-get install -y bash git git-restore-mtime jq pandoc rsync
-          git restore-mtime --i-still-use-this
+          git restore-mtime
           bash ./build.sh
           mkdir -p /var/www/_site
-#          rsync -rclpiv --delete ${{ gitea.workspace }}/_site/ /var/www/_site/
+          rsync -rclpiv --delete ${{ gitea.workspace }}/_site/ /var/www/_site/
